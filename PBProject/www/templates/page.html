@@ -1,0 +1,23 @@
+<ion-view title="Big Data - Visualisation">
+    <ion-content padding="'true'" class="has-header" ng-init="initalize()">
+        <div class="row" style="height:1000px; width:600px;">
+        <div class="col" style="height:800px; width:100px;">
+        <button class="button button-positive button-block " ng-click="Location()">Location of Tweet</button>
+        <button class="button button-positive button-block " ng-click="Source()">Source of Tweet</button>
+        <button class="button button-positive button-block " ng-click="Language()">Top 5 languages in tweets</button>
+        <button class="button button-positive button-block" ng-click="Coordinate()">Tweet on Map</button>
+        <button class="button button-positive button-block " ng-click="Retweet()">Retweeted Tweet</button>
+        <button class="button button-positive button-block " ng-click="TimeZone()">Top 4 Timezone of tweet</button>
+        <button class="button button-positive button-block " ng-click="Hashtag()">Daywise split of Tweet</button>
+        <button class="button button-positive button-block " ng-click="Picture()">User Pictures</button>
+        </div>
+            <div id="graphArea" class="col" style="height:100px; width:600px;">
+                <div id ="imageArea" class="row" style="height:500px; width:900px; background-color:#FFFFFF">
+                </div>
+                <div class ="row" style="height:200px; width:900px;">
+                        <div class="col" style="height:50px; width:100px;" id="previous" ><button class="button button-positive button-block " ng-click="PreviousImage()">Previous</button></div>
+                        <div class="col" id="next" "height:50px; width:100px;"><button class="button button-positive button-block " ng-click="NextImage()">Next</button></div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
